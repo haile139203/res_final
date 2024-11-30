@@ -2,6 +2,7 @@ package application;
 
 import dao.Role;
 import gui.*;
+import listener.LoginListener;
 
 public class UI {
     public EmployeeManagementGUI employeeManagementGUI;
@@ -18,7 +19,7 @@ public class UI {
         loginGUI = new LoginGUI();
     }
 
-    public void changeToUser(Role role) {
-        
+    public void bindLoginEvent(LoginListener callback) {
+
     }
 }
