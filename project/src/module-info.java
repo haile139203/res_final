@@ -3,4 +3,5 @@ module java_fx {
     requires javafx.fxml;
 
     exports gui;
+    exports application;
 }

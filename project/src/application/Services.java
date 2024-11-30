@@ -1,4 +1,4 @@
-package system;
+package application;
 
 import services.AuthService;
 import services.ManagerService;

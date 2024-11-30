@@ -2,7 +2,6 @@
 package gui;
 
 import listener.LoginListener;
-import services.AuthService;
 import dto.request.AuthRequest;
 import common.Result;
 import javafx.application.Application;
@@ -14,10 +13,9 @@ import javafx.stage.Stage;
 
 import java.util.Map;
 
-public class LoginGUI_FX extends Application {
+public class LoginGUI extends Application {
 
     public LoginListener loginListener;
-    private AuthService authService = new AuthService(new repository.UserRepository());
 
     @Override
     public void start(Stage primaryStage) {

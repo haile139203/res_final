@@ -1,14 +1,17 @@
-package system;
+package application;
 
 import java.util.Map;
+import
 
 import common.AppConstant;
 import dao.User;
 import dto.request.AuthRequest;
 import dto.response.UserResponse;
+import javafx.application.Application;
+import javafx.stage.Stage;
 import mapper.UserMapper;
 
-public class System {
+public class System extends Application {
     private UI ui;
     private User user;
     private Repositories repositories;
@@ -19,7 +22,12 @@ public class System {
         repositories = new Repositories();
         services = new Services(repositories);
 
-        ui.loginGUI.loginListener.biConsumer = (userName, password) -> login(userName, password); 
+//        ui.loginGUI.loginListener.biConsumer = (userName, password) -> login(userName, password);
+    }
+
+    @Override
+    public void start(Stage stage) throws Exception {
+
     }
 
     public void login(String userName, String password) {

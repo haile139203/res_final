@@ -1,11 +1,10 @@
-package system;
+package application;
 
 import repository.AttendanceRepository;
 import repository.DishRepository;
 import repository.EmployeeRepository;
 import repository.FeedbackRepository;
 import repository.OrderRepository;
-import repository.StatisticsRepository;
 import repository.UserRepository;
 
 class Repositories {
